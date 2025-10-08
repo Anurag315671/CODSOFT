@@ -15,7 +15,6 @@ while True:
         else:
             for i, task in enumerate(tasks, 1):
                 print(f"{i}. {task}")
-
     elif choice == '2':
         new_task = input("Enter the task to add: ").strip()
         if new_task:
@@ -23,7 +22,6 @@ while True:
             print(f"Task '{new_task}' was added.")
         else:
             print("Cannot add an empty task.")
-
     elif choice == '3':
         print("\n--- Update a Task ---")
         if not tasks:
@@ -44,7 +42,6 @@ while True:
                     print("That task number does not exist.")
             except ValueError:
                 print("Invalid input. Please enter a number.")
-
     elif choice == '4':
         print("\n--- Delete a Task ---")
         if not tasks:
@@ -61,10 +58,8 @@ while True:
                     print("That task number does not exist.")
             except ValueError:
                 print("Invalid input. Please enter a valid number.")
-
     elif choice == '5':
         print("Thanks for using the To-Do List application. Goodbye!")
         break
-
     else:
         print("Invalid choice. Please enter a number from 1 to 5.")
